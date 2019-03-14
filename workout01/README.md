@@ -12,6 +12,6 @@ The data for each individual player, as well as for the combined data, has been 
 
 All of the graphical visualizations, along with the court image underlying the graphs, can be found in the "images" folder.
 
-Finally, attempted two-pointer and three-pointer shots have been turned into appealing and informatinoal tables and analyzed in a 1000+ word report in the "report" file. This analysis does a low-level inquiry into the best and worst players and makes a unique argument about the complexity of how this information can be assessed to judge the players' skill and value.
+Finally, attempted two-pointer and three-pointer shots have been turned into appealing and informational tables and analyzed in a 1000+ word report in the "report" file. This analysis does a low-level inquiry into the best and worst players and makes a unique argument about the complexity of how this information can be assessed to judge the players' skill and value.
 
 
