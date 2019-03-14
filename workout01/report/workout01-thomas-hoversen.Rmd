@@ -3,7 +3,7 @@ title: "workout01-thomas-hoversen.Rmd"
 author: "Thomas Hoversen"
 output: github_document
 ---
-```{r echo = FALSE, results = 'hide'}
+```{r echo = FALSE}
 library(dplyr)
 #Objects for easy import of data frame.
 curry <- "/Users/thomashoversen-juckett/Desktop/workout01/data/stephen-curry.csv"
