@@ -1,0 +1,90 @@
+---
+title: "simple math for binomial distributions"
+author: "Thomas Hoversen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial distribution}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Binomial Distribution
+
+Say you have three inputs: success, trials, and prob. The following tutorial will show you how to calculate the binomial distribution of those inputs, then put them into a nice table.
+
+binomial distribution:
+
+```{r}
+hearts <- bin_probability(success = 3, trials = 9, prob = 0.33)
+hearts
+```
+
+a nice table format:
+
+```{r}
+diamonds <- bin_distribution(trials = 9, prob = 0.33)
+diamonds
+```
+
+Say you want to take this table and add another column that adds the cumulative sum of the probability distribution. 
+
+The function to do that is:
+
+```{r}
+clubs <- bin_cumulative(trials = 9, prob = 0.33)
+```
+
+May be you decide this information is good but you want a little more detail. If this is the case you can get a summary in an object of class "binvar", complete with a list with named elements. You can get just the most basic trial and probability variables, or you can call a more detailed output that includes the mean, mode, variance, skewness, and kurtosis of the probability distribution.
+
+If you just want the basic trial and probability variables:
+
+```{r}
+spades <- bin_variable(30, 0.7)
+spades
+```
+
+For a more detailed output:
+
+```{r}
+ace <- bin_variable(trials = 10, p = 0.3)
+cards <- summary(ace)
+cards
+```
+
+When you are ready to graph, you'll have two options to do this. You can invoke 'plot.bindis()' to graph just the binomial distribution. 
+
+The following code graphs the binomial distribution automatically as a bar graph:
+
+```{r}
+plot.bindis(trials = 5, prob = 0.5)
+```
+
+Finally, if you create an object that stores the output of a table with a cumulative binomial distribution, you can invoke 'plit.bincum()' to graph the cumulative binomial distribution.
+
+The following code graphs the cumulative binomial distribution automatically as a line graph:
+
+```{r}
+plot.bincum(trials = 5, prob = 0.5)
+```
+
+
+# Conclusion
+
+This package is perfect for basic binomial distribution problems and can be incorporated into any coding routine in a fluid and seemless manor. 
+
+
+
+
+
+
+
+
+
+
+

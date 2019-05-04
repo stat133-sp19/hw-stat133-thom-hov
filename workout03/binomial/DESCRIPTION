@@ -1,0 +1,13 @@
+Package: binomial
+Type: Package
+Title: Calculate simple binomial functions!
+Version: 0.1.0
+Author: Thomas Hoversen
+Maintainer: The package maintainer <thom.hov@berkeley.edu>
+Description: The binomial package calculates several simple binomial probabilities. The package comes with built-in hidden functions that ensure valid inputs (to avoid mathematical error), several graphing option, functions that automatically generate tables, and a variety of tools for determining summary statistics.
+License: Open Source
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

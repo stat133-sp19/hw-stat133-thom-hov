@@ -1,0 +1,47 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+## Overview
+
+"binomial" is a minimal package that provides functions to calculate binomial distributions, summary statistics, and their corresponding graph and table representations.
+
+* 'bin_probability()' computes the probability of getting a number of success in a given number of trials with a probability percentage.
+* 'bin_distribution()' creates and displays a data frame with the probability distribution.
+* 'bin_choose()' calculates the number of combinations in which k successes can occur in n trials.
+* 'bin_cumulative()' computes the probability distribution and the cumulative probabilities.
+
+## Motivation
+
+This package was developed as a school project. It's goal is to assist in the calculations and graphing of binomial distributions and summary statistics. 
+
+## Usage
+
+hearts <- bin_probability(success = 2, trials = 5, prob = 0.5)
+hearts
+
+diamonds <- bin_distribution(trials = 5, prob = 0.5)
+diamond
+
+spades <- bin_choose(n = 5, k = 2)
+spades
+
+clubs <- bin_cumulative(trials = 5, prob = 0.5)
+clubs
+
+
+
+
+
+
+
